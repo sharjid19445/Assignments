@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main(){
+    float r,P,V,x;
+    int n;
+    printf("Enter P : ");
+    scanf("%f",&P);
+    printf("Enter n : ");
+    scanf("%d",&n);
+    printf("Enter r : ");
+    scanf("%f",&r);
+    for(int i=1; i<=n;i++){
+            x = pow((1+r),i);
+            V = P*x;
+            printf("P = %.2f n = %d r = %.2f V = %.2f\n\n",P,i,r,V);
+            P = V;
+    }
+}

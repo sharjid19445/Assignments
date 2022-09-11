@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(){
+    int num1=0,num2=1,n,x;
+
+    scanf("%d",&x);
+    printf("%d ",num2);
+
+    do{
+        n = num1 + num2;
+        num1 = num2;
+        num2 = n;
+        printf("%d ",n);
+        x--;
+    }while(x-1>0);
+
+    return 0;
+}
