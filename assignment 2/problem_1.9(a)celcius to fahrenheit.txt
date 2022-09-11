@@ -1,0 +1,15 @@
+//Transform  celcius to fahrenheit : 
+#include<stdio.h>
+
+int main()
+{
+    double f,c;
+    printf("Enter the temperature in celcius  scale : \n");
+    scanf("%lf",&c);
+
+    f=(((9*c)/5)+32);
+
+    printf("The temperature in celcius scale is : %.2lf",f);
+
+    return 0;
+}
