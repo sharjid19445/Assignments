@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    double EOQ,TBO,S_COST,HOLD_COST,D_RATE;
+
+    printf("Enter the value of Demand Rate : ");
+    scanf("%lf",&D_RATE);
+
+    printf("Enter the value of Setup cost : ");
+    scanf("%lf",&S_COST);
+
+    printf("Enter the value of holding cost per item per unit time : ");
+    scanf("%lf",&HOLD_COST);
+
+    EOQ = sqrt((2*D_RATE*S_COST)/HOLD_COST);
+
+    TBO = sqrt((2*S_COST)/(D_RATE*HOLD_COST));
+
+    printf("The value of EOQ is : %.2lf\n",EOQ);
+    printf("The value of TBO is : %.2lf\n",TBO);
+
+
+}

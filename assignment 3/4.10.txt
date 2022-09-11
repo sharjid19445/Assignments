@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+   int a,b,p,q,r,x,y,z;
+
+   printf("Enter the two numbers : \n");
+   scanf("%d\n%d",&a,&b);
+
+   p=b%10;
+   q=b/10;
+   x=a*p;
+   y=a*q;
+   z=(b/10)*10;
+   r=x+(a*z);
+
+   printf(" \t\t  %d\n",a);
+   printf("\tx\t  %d\n",b);
+   printf("\t-------------\n");
+   printf("%d x %d is \t %d\n",p,a,x);
+   printf("%d x %d is \t %d\n",q,a,y);
+   printf("\t-------------\n");
+   printf(" Add   them   \t%d\n",r);
+   
+   return 0;
+}
